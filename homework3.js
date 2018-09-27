@@ -82,19 +82,14 @@ function triangleArea(base , height) {
 console.log (triangleArea(4,6));
 
 //Create a function called numLength that takes a number and returns the number of characters in the number
-function numLength (n) {
-	if (n >= 10) {
-		n = n/10;
-		return 1+ numLength(n);
-	} 
-	else { 
-		return 1;
-	}
+function numLength (a) {
+  
+  const b = a.toString();
+  return b.length;
+	
 
 }
-   
-    console.log(numLength(242))
-
+  console.log(numLength(578585785587888978));
 //Create a function that takes two strings and a number.  If the length of the two strings concatenated together is greater than the given number, return 1, else return -1
 
 function function9(st1,st2,num1)
